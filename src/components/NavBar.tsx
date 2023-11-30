@@ -18,10 +18,10 @@ const NavBar = () => {
                 <div>
                     <h1 className="nav-title">ACIBO GALLERY</h1>
                     <ul>
-                        <li>Home</li>
-                        <li>About me</li>
-                        <li>services</li>
-                        <li>Contact me</li>
+                        <li><a href="#" className="nav-link">Home</a></li>
+                        <li><a href="#" className="nav-link">About me</a></li>
+                        <li><a href="#" className="nav-link">services</a></li>
+                        <li><a href="#" className="nav-link">Contact me</a></li>
                     </ul>
                     <div>
                         <FaPhoneAlt />

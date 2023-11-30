@@ -77,8 +77,32 @@ div.nav-links {
     padding: 20px;
 }
 
-h1.nav-title {
+h1.nav-title, .nav-link  {
     font-family: 'Roboto', sans-serif;
+}
+
+h1.nav-title {
     font-size: 2em;
-    margin-bottom:20px;
+    margin-bottom:100px;
+}
+
+nav li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display:inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size:15px;
+    font-weight: 300;
+    color:black;
+    width:100%;
+}
+
+.nav-link:hover {
+    background-color: purple;
+    color: #fff;
 }

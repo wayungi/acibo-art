@@ -31,12 +31,12 @@ const NavBar = () => {
                         <IoMailOpenOutline className="react-icons"/>
                         <p className="icon-info">wayncis@gmail.com</p>
                     </div>
-                    <div  className="interactive-icon">
-                        <BiLogoFacebookCircle className="social-icons" />
-                        <AiFillTwitterCircle  className="social-icons" />
-                        <AiFillMediumCircle  className="social-icons" />
-                        <FaInstagramSquare   className="social-icons" />
-                        <IoLogoYoutube  className="social-icons" />
+                    <div  className="interactive-icon social-icons">
+                        <BiLogoFacebookCircle className="social-icon" />
+                        <AiFillTwitterCircle  className="social-icon" />
+                        <AiFillMediumCircle  className="social-icon" />
+                        <FaInstagramSquare   className="social-icon" />
+                        <IoLogoYoutube  className="social-icon" />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { GrClose } from "react-icons/gr";
-// import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMailOpenOutline } from "react-icons/io5";
 
@@ -10,10 +11,12 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
 
 const NavBar = () => {
+  const [navBarVisible, setNavBarVisible] = useState(false);
+
   return (
     <nav>
-        {/* <GiHamburgerMenu /> */}
-        <section className="nav-content">
+        <GiHamburgerMenu className={`hamburger ${navBarVisible ? "hide-ham" : "show-ham"}`} onClick={() => setNavBarVisible(true)}/>
+        <section className={`nav-content ${navBarVisible ? 'nav-visible' : 'nav-invisible'}`}>
             <div className="nav-links">
                 <div>
                     <h1 className="nav-title">ACIBO GALLERY</h1>
@@ -40,7 +43,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <GrClose />
+            <GrClose className="close-icon" onClick={() => setNavBarVisible(false)}/>
         </section>
     </nav>
   )

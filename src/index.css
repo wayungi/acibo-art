@@ -69,7 +69,18 @@ nav {
 
 section.nav-content {
     display: flex;
+    position:absolute;
 }
+
+section.nav-content.nav-invisible {
+    left: -400px;
+    transition: left 2s ease;
+}
+
+section.nav-content .nav-visible {
+    left: 0px;
+}
+
 
 div.nav-links {
     background-color: #fff;
@@ -130,8 +141,28 @@ p.icon-info {
 }
 
 .social-icons {
-    /* outline:1px solid red; */
     justify-content:flex-start;
     gap: 10px;
     margin-top:30px;
+}
+
+.close-icon {
+    margin-left:70px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hamburger {
+    margin: 20px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.hide-ham {
+    display:none;
+}
+
+.show-ham {
+    display: block;
 }

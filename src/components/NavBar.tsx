@@ -1,11 +1,49 @@
 import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMailOpenOutline } from "react-icons/io5";
+
+import { BiLogoFacebookCircle } from "react-icons/bi";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillMediumCircle } from "react-icons/ai";
+import { FaInstagramSquare } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io5";
 
 const NavBar = () => {
   return (
     <nav>
+
+    <GiHamburgerMenu />
+
+    <section>
+        <div>
+            <h1>ACIBO GALLERY</h1>
+            <ul>
+                <li>Home</li>
+                <li>About me</li>
+                <li>services</li>
+                <li>Contact me</li>
+            </ul>
+            <div>
+                <FaPhoneAlt />
+                <p>+256 779855740</p>
+            </div>
+            <div>
+                <IoMailOpenOutline />
+                <p>wayncis@gmail.com</p>
+            </div>
+            <div>
+                <BiLogoFacebookCircle />
+                <AiFillTwitterCircle />
+                <AiFillMediumCircle />
+                <FaInstagramSquare />
+                <IoLogoYoutube />
+            </div>
+        </div>
         <GrClose />
-        <GiHamburgerMenu />
+
+    </section>
+   
 
     </nav>
   )

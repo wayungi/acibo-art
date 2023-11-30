@@ -1,5 +1,6 @@
 import BackgroundImageSlider from "../components/ImageSlider";
 
+
 const Home = () => {
 
   return (

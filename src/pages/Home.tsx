@@ -1,11 +1,12 @@
-import { CarouselImages } from "../util/carouselImages";
+import BackgroundImageSlider from "../components/ImageSlider";
 
 const Home = () => {
 
-  const carousel = CarouselImages.map((image) => <img src={image} alt="carousel image" />)
   return (
-  <div className="hpome-page">{carousel}</div>
-  )
+    <div>
+      <BackgroundImageSlider />
+    </div>
+  );
 }
 
 export default Home;

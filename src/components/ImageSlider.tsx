@@ -2,9 +2,11 @@ import { CarouselImages } from "../util/carouselImages";
 
 
 const ImageSlider = () => {
-    const carousel = CarouselImages.map((image) => <img src={image} alt="carousel image" />);
+    const carousel = CarouselImages.map((image) => <div className="bg-frame"><img src={image} alt="carousel image" /></div>);
     return (
-    <div className="home-page">{carousel}</div>
+        <section className="image-slider">
+            {carousel}
+        </section>
     );
 }
 

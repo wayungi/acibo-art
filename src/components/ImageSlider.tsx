@@ -3,12 +3,12 @@ import { CarouselImages } from "../util/carouselImages";
 
 
 const ImageSlider = () => {
-    const delay = 3000;
+    const delay = 9000;
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
         setTimeout(() => setIndex((prevIndex) => prevIndex ===  CarouselImages.length - 1 ? 0 : prevIndex + 1), delay);
-        // return () => {};
+        return () => {};
     }, [index])
 
 
@@ -18,7 +18,7 @@ const ImageSlider = () => {
         <img src={image} alt="carousel image" className="slide"/>
         </div>
     );
-    const slideShowDots = CarouselImages.map((_, index) => <div key={index} className="slide-show-dot"></div>);
+    const slideShowDots = CarouselImages.map((_, indx) => <div key={indx} className={`slide-show-dot ${index === indx ? "active" : ""}`}></div>);
 
     return (
         <section className="image-slider">

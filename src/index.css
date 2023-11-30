@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
-/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&family=Tilt+Prism&display=swap');
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Tilt Prism', sans-serif; */
 
 
 * {
@@ -60,8 +61,44 @@ div.home-page-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     position:absolute;
     z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
 }
 
+.home-page-overlay h1, .home-page-overlay p {
+    font-size: 3em;
+    text-align: center;
+}
+
+.view-works {
+    border:2px solid antiquewhite;
+    display: inline-block;
+    padding:20px;
+    text-transform: uppercase;
+    color:antiquewhite;
+    text-decoration: none;
+    width:100%;
+    text-align: center;
+    margin-top:20px;
+}
+
+.view-works:hover {
+    border:2px solid red;
+    background-color: red;
+}
+
+.home-page-overlay h1 {
+    font-family: 'Tilt Prism', sans-serif;
+}
+
+.home-page-overlay p {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif
+}
 nav {
     z-index: 4;
     position:absolute;

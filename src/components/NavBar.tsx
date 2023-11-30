@@ -23,20 +23,20 @@ const NavBar = () => {
                         <li><a href="#" className="nav-link">services</a></li>
                         <li><a href="#" className="nav-link">Contact me</a></li>
                     </ul>
-                    <div>
-                        <FaPhoneAlt />
-                        <p>+256 779855740</p>
+                    <div className="interactive-icon">
+                        <FaPhoneAlt className="react-icons"/>
+                        <p className="icon-info">+256 779855740</p>
                     </div>
-                    <div>
-                        <IoMailOpenOutline />
-                        <p>wayncis@gmail.com</p>
+                    <div  className="interactive-icon">
+                        <IoMailOpenOutline className="react-icons"/>
+                        <p className="icon-info">wayncis@gmail.com</p>
                     </div>
-                    <div>
-                        <BiLogoFacebookCircle />
-                        <AiFillTwitterCircle />
-                        <AiFillMediumCircle />
-                        <FaInstagramSquare />
-                        <IoLogoYoutube />
+                    <div  className="interactive-icon">
+                        <BiLogoFacebookCircle className="social-icons" />
+                        <AiFillTwitterCircle  className="social-icons" />
+                        <AiFillMediumCircle  className="social-icons" />
+                        <FaInstagramSquare   className="social-icons" />
+                        <IoLogoYoutube  className="social-icons" />
                     </div>
                 </div>
             </div>

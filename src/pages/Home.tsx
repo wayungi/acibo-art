@@ -3,9 +3,10 @@ import BackgroundImageSlider from "../components/ImageSlider";
 const Home = () => {
 
   return (
-    <div>
+    <section className="home-page">
+      <div className="home-page-overlay"></div>
       <BackgroundImageSlider />
-    </div>
+    </section>
   );
 }
 
